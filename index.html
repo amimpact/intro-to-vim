@@ -5,6 +5,11 @@
     <title>Intro to Vim</title>
     <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
     <link rel="stylesheet" href="bower_components/reveal.js/css/theme/solarized.css">
+    <style>
+      blockquote {
+        text-align: left;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
@@ -14,43 +19,210 @@
           <h1>Intro to Vim</h1>
         </section>
 
+        <!---->
+        <section>
+          <h3>Why I use Vim</h3>
+          <ul>
+            <li>Desired a more seamless environment</li>
+            <li>Might as well be Vim
+              <ul>
+                <li>"nerd cred"</li>
+                <li>server administration</li>
+                <li>options: terminal or gui</li>
+                <li>RSI prevention</li>
+              </ul>
+            </li>
+            <li><strong>BUT...</strong>It might not be for you</li>
+        </section>
+
+        <!-- learning curve -->
+        <section>
+          <h3>Everyone's first Vim session</h3>
+          <blockquote>
+            ^C^C^X^X^X^XquitqQ!qdammit[esc]qwerty
+            uiopasdfghjkl;:xwhat
+          </blockquote>
+          <a href="http://bash.org/7795779">Bash.org</a>
+        </section>
+
+        <section>
+          <h3>But how can we avoid this</h3>
+          <ul>
+            <li>vimtutor - command line tutorial</li>
+            <li><a href="http://vim-adventures.com/">VIM Adventures</a></li>
+            <li>
+              <a href="http://www.viemu.com/vi-vim-cheat-sheet.gif">
+                This Cheat Sheet
+              </a> - or
+              <a href="http://www.terminally-incoherent.com/blog/wp-content/uploads/2009/03/vimcheatsheet.pdf">
+                many
+              </a>
+              <a href="http://www2.cs.uidaho.edu/~rinker/ed03.pdf">others</a>.
+            </li>
+            <li>Focus on five commands a week</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>You will probably still struggle</h3>
+          <ul>
+            <li>Copy and paste</li>
+            <li>Not using the mouse</li>
+            <li>Getting to the end of the line</li>
+          </ul>
+        </section>
+
+        <!-- modes -->
+        <section>
+          <h3>Vim is a modal editor</h3>
+          <p>WORK IN PROGRESS</p>
+        </section>
+
+        <!-- movement -->
+        <section>
+          <h3>You can move around</h3>
+          <ul>
+            <li>The bare minimum
+              <ul>
+                <li>h, j, k, l</li>
+              </ul>
+            </li>
+            <li>Do not use the arrow keys</li>
+            <li>get around the screen faster
+              <ul>
+                <li>H, M, L, gg, G, :50</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- actions -->
+        <section>
+          <h3>And do things</h3>
+          <ul>
+            <li>i - insert</li>
+            <li>d - delete</li>
+            <li>y - yank, p - paste
+              <ul>
+                <li>Copy and paste - sort of</li>
+              </ul>
+            </li>
+            <li>c - change
+              <ul>
+                <li>like selecting text and typing over it</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- objects -->
+        <section>
+          <h3>On objects</h3>
+          <ul>
+            <li>obvious
+              <ul>
+                <li>w - word, line</li>
+              </ul>
+            </li>
+            <li>logical
+              <ul>
+                <li>p - paragraph, s - sentence</li>
+              </ul>
+            </li>
+            <li>useful
+              <ul>
+                <li>blocks of all sorts (t - html, various symbols)</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- modified -->
+        <section>
+          <h3>That can be modified</h3>
+          <ul>
+            <li>i - inside</li>
+            <li>a - around</li>
+            <li>t - (un)till</li>
+            <li>f - find</li>
+          </ul>
+        </section>
+
+        <!-- combined -->
+        <section>
+          <h3>And finally combined into a language</h3>
+          <ul>
+            <li>Basic things
+              <ul>
+                <li>3j - down three lines</li>
+                <li>d3j - delete the next three liens</li>
+                <li>d3k - delete hte previous three lines</li>
+              </ul>
+            </li>
+            <li>And more advanced ones
+              <ul>
+                <li>c$ - change until the end of the line</li>
+                <li>das - delete around sentence</li>
+                <li>ci" - change inside quotes</li>
+                <li>dit - delete inside html blocks (<b>test</b>)
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- example stuff -->
+        <section>
+          <h3>Example stuff TBD</h3>
+          <ul>
+            <li>sample github repo (basic config)</li>
+            <li>have clone; launch with -u</li>
+            <li>show some editing? (find video of someone much better</li>
+          </ul>
+        </section>
 
         <!-- Resources Slide -->
         <section>
-          <h1>Resources</h1>
           <h3>Other Talks</h3>
-          <p>
-            <ul>
-              <li>
-                <a href="https://www.youtube.com/watch?v=SkdrYWhh-8s">
-                  Write Code Faster: Expert-Level Vim
-                </a>
-                by Ben Orenstein
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=aHm36-na4-4">
-                  More Instantly Better Vim
-                </a>
-                by Damian Conway
-              </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=9jzWDr24UHQ">
-                  Impressive Ruby Productivity With Vim and Tmux
-                </a>
-                by Chris Hunt
-              </li>
-            </ul>
-          </p>
-          <h3>Repository</h3>
-          <p>
-            <ul>
-              <li>
-                <a href="https://www.github.com/atomaka/intro-to-vim">
-                  www.github.com/atomaka/intro-to-vim
-                </a>
-              </li>
-            </ul>
-          </p>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=SkdrYWhh-8s">
+                Write Code Faster: Expert-Level Vim
+              </a>
+              by Ben Orenstein
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=aHm36-na4-4">
+                More Instantly Better Vim
+              </a>
+              by Damian Conway
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=9jzWDr24UHQ">
+                Impressive Ruby Productivity With Vim and Tmux
+              </a>
+              by Chris Hunt
+            </li>
+          </ul>
+        </section>
+
+        <!-- Repository slide -->
+        <section>
+          <h3>Other</h3>
+          <ul>
+            <li>
+              <a href="https://www.github.com/atomaka/intro-to-vim">
+                These slides
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/atomaka/dotfiles/blob/master/.vimrc">
+                My vimrc
+              </a>
+              <ul>
+                <li>(but I recommend starting with a blank)</li>
+              </ul>
+            </li>
+          </ul>
         </section>
       </div>
     </div>
@@ -59,8 +231,7 @@
       Reveal.initialize({
         controls: false,
         progress: true,
-        history: true,
-        transition: 'linear'
+        history: true
       });
     </script>
   </body>
