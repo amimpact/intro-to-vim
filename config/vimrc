@@ -1,0 +1,26 @@
+set nocompatible          " Disable vi compatibility
+
+set autoindent            " Automatically indent to the best of Vim's ability
+set backspace=2           " Backspace over indent, eol, start of insert
+set cpoptions+=$          " So we know what we are changing
+set hlsearch              " Hilight search results
+set nowrap                " disable wrapping by default
+set number                " Show line numbers
+set ruler                 " Show cursor position in status bar
+set showcmd               " Display commands as you type them
+set showmode              " Show Vim mode on status (normal, insert, visual, ..)
+set wrapscan              " Wrap the search to the start of the document
+
+" Tabs are 2 spaces
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+" Keybinds
+" ctrl+s for save spam
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+" filetype stuff
+filetype plugin indent on
