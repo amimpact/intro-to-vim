@@ -38,9 +38,11 @@
   * Getting to the end of the line example
     * I used shift+A<ESC> instead of $ for months
 
-## Vim is a modal editor
+## Vim has modes
 
-* TODO
+* In the early days, all editors had modes.  By programmers, for programers.
+* Mid-1970s, Larry Tesler came up with the concept of modeless editors.
+* But a lot of power in favor of this ease of use.
 
 ## You can move around
 
