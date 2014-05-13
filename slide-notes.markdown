@@ -14,8 +14,8 @@
   * More importantly, server administration
     * Vim (or vi) works **everywhere**, no matter how broken the machine is
     * (emacs does not)
+  * After 20 years, people are still finding new ways to use it
   * Repetitive Strain injury - vim helps enforce better habbits
-  * After 20 years, people are still using it
 * You have to decide what works for you
 
 ## Everyone's first Vim session
@@ -84,6 +84,8 @@
 * Chris Hunt - Shows basics of using Vim in combination with Tmux
   * I do this
 
-# Other
+# Resources
 
 * Slides along with sample configuration available on Github
+
+# Try Vim for yourself
