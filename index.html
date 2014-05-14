@@ -36,6 +36,22 @@
               </ul>
             </li>
             <li><strong>BUT...</strong>It might not be for you</li>
+            <aside class="notes">
+              <ul>
+                <li>Too many tools: Sublime Text 2 for editing, Putty for SSH,
+                git bash for git, Cygwin for Rubt commands.</li>
+                <li>Can mostly be done in ST2 with time.  Restart with Vim,
+                "nerd cred", More importantly, server administration Vim (or vi)
+                works everywhere, no matter how broken the machine is (emacs
+                does not)</li>
+                <li>
+                  After 20 years, people are still finding new ways to use it
+                </li>
+                <li>
+                  Repetitive Strain injury - vim helps enforce better habbits
+                </li>
+                <li>You have to decide what works for you</li>
+            </aside>
         </section>
 
         <!-- learning curve -->
@@ -64,6 +80,14 @@
             </li>
             <li>Focus on five commands a week</li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>vimtutor - 30-45 minutes is enough to gain usability</li>
+              <li>VIM Adventures - game that finally pushed me into learning</li>
+              <li>Cheat Sheet - I still keep one printed off on a wall</li>
+              <li>Focus on a small set - I picked five that I wrote down and learned
+              each week and still do from time to time</li>
+          </aside>
         </section>
 
         <section>
@@ -73,6 +97,15 @@
             <li>Not using the mouse</li>
             <li>Getting to the end of the line</li>
           </ul>
+          <aside class="notes">
+            My struggles
+            <ul>
+              <li>Copy and paste - different idea</li>
+              <li>Not using a mouse</li>
+              <li>Getting to the end of the line example: I used
+              shift+A&lt;ESC&gt; instead of $ for months</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- modes -->
@@ -88,6 +121,15 @@
               </ul>
             </li>
             <li>Higher complexity, but comes with incredible power</li>
+            <aside class="notes">
+              <ul>
+                <li>In the early days, all editors had modes.  By programmers,
+                for programers.</li>
+                <li>Mid-1970s, Larry Tesler came up with the concept of modeless
+                editors.</li>
+                <li>But traded a lot of power in favor of this ease of use.</li>
+              </ul>
+            </aside>
           </ul>
         </section>
 
@@ -107,6 +149,12 @@
               </ul>
             </li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>Focus on home row.</li>
+              <li>Move around screen: H, M, L</li>
+              <li>Move around document: gg, G, :50</li>
+          </aside>
         </section>
 
         <!-- actions -->
@@ -126,6 +174,15 @@
               </ul>
             </li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>insert is a complete mode switch to let you type text, leave
+              with &lt;ESC&gt;</li>
+              <li>delete, change, yank act on things</li>
+              <li>All of them put affected text into a place that can be pasted
+              from</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- objects -->
@@ -148,6 +205,12 @@
               </ul>
             </li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>Everything is an object in Vim.</li>
+              <li>Learning to utilize these is the key to effective vim use</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- modified -->
@@ -159,6 +222,15 @@
             <li>t - (un)till</li>
             <li>f - find</li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>inside - excludes the surrounding part of the object</li>
+              <li>around - includes the surrounding part of the object</li>
+              <li>till - from cursor to the specific character</li>
+              <li>find - the same as till except for including the specific
+              character</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- combined -->
@@ -181,6 +253,13 @@
               </ul>
             </li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>
+                das - includes the spaces.  dis would not inclue space after.
+              </li>
+            </ul>
+          </aside>
         </section>
 
         <!-- example stuff -->
@@ -211,6 +290,14 @@
               by Chris Hunt
             </li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>Ben Orenstein - one of my favorite speakers</li>
+              <li>:w&lt;CR&gt; to ^s; thousands of key strokes per week</li>
+              <li>Damian Conway - more advanced with neat plugins</li>
+              <li>Chris Hunt - Basic tmux and Vim.  I do this.</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Repository slide -->
@@ -231,6 +318,11 @@
               </ul>
             </li>
           </ul>
+          <aside class="notes">
+            <ul>
+              <li>Grow your vim file like a garden</li>
+            </ul>
+          </aside>
         </section>
 
         <!-- Conclusion -->
@@ -239,12 +331,32 @@
         </section>
       </div>
     </div>
+    <script src="bower_components/headjs/dist/1.0.0/head.min.js"></script>
     <script src="bower_components/reveal.js/js/reveal.min.js"></script>
     <script>
       Reveal.initialize({
         controls: false,
         progress: true,
-        history: true
+        history: true,
+        dependencies: [
+          {
+            src: 'bower_components/reveal.js/plugin/notes/notes.js',
+            async: true,
+            condition: function() { return !!document.body.classList; }
+          },
+          {
+            src: 'bower_components/reveal.js/plugin/markdown/marked.js',
+            condition: function() {
+              return !!document.querySelector( '[data-markdown]' );
+              }
+            },
+            {
+              src: 'bower_components/reveal.js/plugin/markdown/markdown.js',
+              condition: function() {
+                return !!document.querySelector( '[data-markdown]' );
+              }
+            },
+        ]
       });
     </script>
   </body>
