@@ -5,6 +5,13 @@
 Into to Vim presentation given to the Lansing Area Ruby Meetup.  Includes all
 slides, speaker notes, and examples used.
 
+## Slideshow
+
+Launch the slideshow in your browser.  You can use the left and right keys to
+navigate the slides.  If you launch the slides on a webserver (ie.```python -m
+SimpleHTTPServer```), you can view the speaker notes using the "s" key on your
+keyboard.
+
 ## Resources
 
 ### Vim
