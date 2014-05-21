@@ -2,7 +2,7 @@
 
 ## Description
 
-Into to Vim presentation given to the Lansing Area Ruby Meetup.  Includes all
+Intro to Vim presentation given to the Lansing Area Ruby Meetup.  Includes all
 slides, speaker notes, and examples used.
 
 ## Slideshow
